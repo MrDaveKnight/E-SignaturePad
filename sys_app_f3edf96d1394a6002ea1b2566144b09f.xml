@@ -7,13 +7,13 @@
         <licensable>true</licensable>
         <logo/>
         <menu/>
-        <name>E-Signature Pad</name>
+        <name>E-Signature Pad for a Formatter</name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
         <scope>x_snc_e_sig_pad</scope>
         <scoped_administration>false</scoped_administration>
-        <short_description/>
+        <short_description>Create an E-Sig formatter for any table that includes the UI Macro in this application, then apply it to any native form view. An example for Task is provided.</short_description>
         <source>x_snc_e_sig_pad</source>
         <store_correlation_id/>
         <store_url/>
@@ -22,9 +22,9 @@
         <sys_created_by>dave.knight</sys_created_by>
         <sys_created_on>2016-06-28 21:08:20</sys_created_on>
         <sys_id>f3edf96d1394a6002ea1b2566144b09f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>dave.knight</sys_updated_by>
-        <sys_updated_on>2016-06-28 21:08:20</sys_updated_on>
+        <sys_updated_on>2016-09-17 18:48:21</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>

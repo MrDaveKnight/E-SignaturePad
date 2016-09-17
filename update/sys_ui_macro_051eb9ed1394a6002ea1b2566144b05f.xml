@@ -10,14 +10,14 @@
         <sys_class_name>sys_ui_macro</sys_class_name>
         <sys_created_by>dave.knight</sys_created_by>
         <sys_created_on>2016-06-29 01:57:19</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>051eb9ed1394a6002ea1b2566144b05f</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>e_sig_pad_for_formatter</sys_name>
-        <sys_package display_value="E-Signature Pad" source="x_snc_e_sig_pad">f3edf96d1394a6002ea1b2566144b09f</sys_package>
+        <sys_package display_value="E-Signature Pad for a Formatter" source="x_snc_e_sig_pad">f3edf96d1394a6002ea1b2566144b09f</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="E-Signature Pad">f3edf96d1394a6002ea1b2566144b09f</sys_scope>
+        <sys_scope display_value="E-Signature Pad for a Formatter">f3edf96d1394a6002ea1b2566144b09f</sys_scope>
         <sys_update_name>sys_ui_macro_051eb9ed1394a6002ea1b2566144b05f</sys_update_name>
         <sys_updated_by>dave.knight</sys_updated_by>
         <sys_updated_on>2016-06-29 02:02:49</sys_updated_on>
