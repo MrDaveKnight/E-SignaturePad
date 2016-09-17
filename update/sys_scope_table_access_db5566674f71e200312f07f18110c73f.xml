@@ -156,7 +156,7 @@
 	java.lang.Thread.run(Thread.java:745)
 </example_stack_trace>
         <read_access>true</read_access>
-        <source_scope display_value="E-Signature Pad for a Formatter">f3edf96d1394a6002ea1b2566144b09f</source_scope>
+        <source_scope display_value="E-Signature Pad for Formatter">f3edf96d1394a6002ea1b2566144b09f</source_scope>
         <sys_class_name>sys_scope_table_access</sys_class_name>
         <sys_created_by>dave.knight</sys_created_by>
         <sys_created_on>2016-09-17 18:42:38</sys_created_on>
@@ -164,10 +164,10 @@
         <sys_id>db5566674f71e200312f07f18110c73f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sys_ui_script</sys_name>
-        <sys_package display_value="E-Signature Pad for a Formatter" source="x_snc_e_sig_pad">f3edf96d1394a6002ea1b2566144b09f</sys_package>
+        <sys_package display_value="E-Signature Pad for Formatter" source="x_snc_e_sig_pad">f3edf96d1394a6002ea1b2566144b09f</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="E-Signature Pad for a Formatter">f3edf96d1394a6002ea1b2566144b09f</sys_scope>
+        <sys_scope display_value="E-Signature Pad for Formatter">f3edf96d1394a6002ea1b2566144b09f</sys_scope>
         <sys_update_name>sys_scope_table_access_db5566674f71e200312f07f18110c73f</sys_update_name>
         <sys_updated_by>dave.knight</sys_updated_by>
         <sys_updated_on>2016-09-17 18:42:38</sys_updated_on>

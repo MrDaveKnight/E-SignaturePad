@@ -3,24 +3,24 @@
     <sys_ui_macro action="INSERT_OR_UPDATE">
         <active>true</active>
         <category>general</category>
-        <description>Include this UI macro in a standard formatter to enable electronic signature in a standard form. The macro will save the e-signature image as an attachment to the current record, with a naming convension of "E-Signature_&lt;current.sys_id&gt;". If a file with that name is attached to the current record, the e-signature pad will be disabled when the form renders.</description>
+        <description>Include this UI macro in a standard formatter to enable electronic signature in a native form. The macro will save the e-signature image as an attachment to the current record, with a naming convension of "E-Signature_&lt;current.sys_id&gt;". If a file with a name in this format is attached to the current record, the e-signature pad will be disabled when the form renders.</description>
         <media_type/>
         <name>e_sig_pad_for_formatter</name>
         <scoped_name/>
         <sys_class_name>sys_ui_macro</sys_class_name>
         <sys_created_by>dave.knight</sys_created_by>
         <sys_created_on>2016-06-29 01:57:19</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>051eb9ed1394a6002ea1b2566144b05f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>e_sig_pad_for_formatter</sys_name>
-        <sys_package display_value="E-Signature Pad for a Formatter" source="x_snc_e_sig_pad">f3edf96d1394a6002ea1b2566144b09f</sys_package>
+        <sys_package display_value="E-Signature Pad for Formatter" source="x_snc_e_sig_pad">f3edf96d1394a6002ea1b2566144b09f</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="E-Signature Pad for a Formatter">f3edf96d1394a6002ea1b2566144b09f</sys_scope>
+        <sys_scope display_value="E-Signature Pad for Formatter">f3edf96d1394a6002ea1b2566144b09f</sys_scope>
         <sys_update_name>sys_ui_macro_051eb9ed1394a6002ea1b2566144b05f</sys_update_name>
         <sys_updated_by>dave.knight</sys_updated_by>
-        <sys_updated_on>2016-06-29 02:02:49</sys_updated_on>
+        <sys_updated_on>2016-09-17 19:04:52</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 
@@ -73,6 +73,7 @@
     signaturePad.off();
 
     /*
+	Not used 
 			function resizeCanvas() {
 	          var ratio =  Math.max(window.devicePixelRatio || 1, 1);
 	          canvas.width = canvas.offsetWidth * ratio;
@@ -82,7 +83,7 @@
 	        }
 	        window.addEventListener("resize", resizeCanvas);
 	        resizeCanvas();
-	        */
+	 */
 
     function saveSig() {
 
@@ -101,7 +102,8 @@
         var restEndPoint = "api/now/v1/attachment/file?" +
             p1 + "$[AMP]" + p2 + "$[AMP]" + p3;
 
-
+        
+	    // Submit the signature as an attachement
         var comm = new XMLHttpRequest();
         comm.open("post", restEndPoint, false); // false - synchronous!
         comm.setRequestHeader("Content-Type", "image/jpeg");
@@ -111,6 +113,7 @@
             gel('esig_please_wait').style.display = "none";
             alert("E-Signature save failed!");
         } else {
+	        // Reload to get the attachement rendered at the top of the form, and disable the pad
             location.reload();
         }
     };
